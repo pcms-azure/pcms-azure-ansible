@@ -1,9 +1,14 @@
-az
+ansible
 =========
 
-Installs the latest version of the Azure CLI onto Ubuntu.
+Installs the Azure version of Ansible via pip, and then adds the dynamic inventory script.
 
-Reference: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest
+Work in progress.  Needs testing.
+
+References: 
+
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/ansible-install-configure
+* https://docs.microsoft.com/en-us/azure/ansible/ansible-manage-azure-dynamic-inventories
 
 Requirements
 ------------
@@ -23,13 +28,11 @@ None.
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
 - hosts: ubuntu
   remote_user: overlord
   become: true
   roles:
-     - { role: az }
+     - { role: ansible }
 
 License
 -------
